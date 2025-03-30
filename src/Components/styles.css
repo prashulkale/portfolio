@@ -1,0 +1,159 @@
+/* Base styles for all devices */
+#section {
+    width: 100vw;
+    padding: 0 20px; /* Reduced padding for smaller screens */
+  }
+  
+  .sections {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 50px; /* Adjusted margin for smaller screens */
+  }
+  
+  .box {
+    width: 60vw;
+    /* height: 50vw; */
+    cursor: pointer;
+   overflow: hidden;
+    margin-top: 50px; /* Adjusted margin for smaller screens */
+  }
+  
+  .box5 {
+    margin-bottom: 50px; /* Adjusted margin for smaller screens */
+  }
+  
+  .image {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 600px; /* Limit maximum width */
+  
+    height: 350px; /* Adjusted height for smaller screens */
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+        border-radius: 5%;
+    overflow: hidden;
+
+    
+
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .image img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .sections:nth-child(2n) {
+    justify-content: left;
+  }
+  
+  .text {
+    overflow: hidden;
+    mix-blend-mode: "difference";
+  }
+  
+  .textblock {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .textblock h2 {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+    /* font-family: "gilroy"; */
+    padding: 10px 0 11px;
+  }
+  
+  .textblock h6 {
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(118, 118, 118);
+    letter-spacing: 1px;
+    padding: 5px 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* For tablets and smaller desktops */
+  @media (max-width: 1024px) {
+    #section {
+      padding: 0 40px; /* Adjusted padding for tablets */
+    }
+  
+    .image {
+      height: 250px; /* Adjusted height for tablets */
+    }
+  
+    .textblock h2 {
+      font-size: 18px; /* Adjusted font size for tablets */
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    #section {
+      padding: 0 20px; /* Adjusted padding for mobile */
+    }
+  
+    .sections {
+      justify-content: end; /* Center align for mobile */
+      margin-top: 30px; /* Adjusted margin for mobile */
+    }
+  
+    .box {
+      margin-top: 30px;
+       /* Adjusted margin for mobile */
+    }
+  
+    .box5 {
+      margin-bottom: 30px; /* Adjusted margin for mobile */
+    }
+  
+    .image {
+      height: 200px; /* Adjusted height for mobile */
+    }
+  
+    .textblock h2 {
+      font-size: 16px; /* Adjusted font size for mobile */
+    }
+  
+    .textblock h6 {
+      font-size: 9px; /* Adjusted font size for mobile */
+    }
+  }
+  
+  /* For very small mobile devices */
+  @media (max-width: 480px) {
+    #section {
+        width: 100%;
+      padding: 0 10px; 
+    justify-content: center;
+      /* Adjusted padding for very small screens */
+    }
+   
+      .sections:nth-child(2n) , .sections  {
+    justify-content: center;
+  }
+
+  .box{
+    width: 80vw;
+  }
+  
+    .image {
+      height: 350px; /* Adjusted height for very small screens */
+    }
+  
+    .textblock h2 {
+      font-size: 14px; /* Adjusted font size for very small screens */
+    }
+  
+    .textblock h6 {
+      font-size: 8px; /* Adjusted font size for very small screens */
+    }
+  }
