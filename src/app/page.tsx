@@ -4,7 +4,6 @@
 
 import { useEffect, useState } from "react";
 import Dynamic from "@/Components/Dynamic/page";
-import styles from "@/components/styles.module.scss";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -23,12 +22,12 @@ export default function Home() {
         <Dynamic />
       ) : (
         <div
-          style={{ fontFamily: "Voyage Regular" }}
-          className={` lg:flex-row   text-[25vw]   lg:text-[12vw]  ${styles.loading}  `}
-        >
-        
-          <span> Prashant</span> <span> Kale </span>
-        </div>
+        style={{ fontFamily: "Voyage Regular" }}
+        className="w-screen h-screen absolute top-0 z-[99999] bg-black flex flex-col  justify-center items-center text-[25vw] lg:text-[14vw] text-[#c9c9c9] leading-[20vw]"
+      >
+        <h1>Prashant </h1> 
+        <span>Kale</span>
+      </div>
       )}
     </>
   );

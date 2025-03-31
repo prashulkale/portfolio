@@ -100,7 +100,7 @@ export default function Landing() {
       className="relative w-[100vw]  flex flex-col  h-[100vh]  bg-red-300"
     >
 
-      <div className="w-full  h-screen relative   bg-red-300 ">
+      <div className="w-full  h-screen relative    bg-red-300  md:bg-red-400/80">
         <div style={{fontFamily : "Voyage Medium"}} ref={slider} className="relative  h-[70vh] lg:h-[100vh]    flex  items-center  whitespace-nowrap">
           <h1
             ref={firstText}
@@ -127,7 +127,7 @@ export default function Landing() {
 
 <div className="relative flex justify-center z-10 w-full  mx-auto">
                 <Image
-                  className="absolute object-contain  h-[90vmax]   md:translate-y-[20vmax]   bottom-[-10vmax]"
+                  className="absolute object-contain  h-[80vmax] md:h-[60vmax]      bottom-[-10vmax]"
                   src={img}
                   alt="heroImg"
                   priority

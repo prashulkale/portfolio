@@ -135,7 +135,7 @@ export default function SkillsSection() {
 
 export function FrontendBackendSkills() {
   return (
-    <div className="bg-white/10   md:w-[60vw] h-[80vmax] backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+    <div className="bg-white/10   md:w-full h-[80vmax] backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
       <div className="space-y-8">
         {/* Frontend Skills */}
         <div>

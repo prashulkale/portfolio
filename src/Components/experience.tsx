@@ -5,6 +5,7 @@
 import React, { useState } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import SectionHeading from "./section-heading";
+import Image from "next/image";
 
 interface Project {
   id: number;
@@ -15,7 +16,7 @@ interface Project {
   links: {
     label: string;
     url: string;
-    icon: JSX.Element;
+    icon: React.ReactElement ;
   }[];
   layout: 'left' | 'right';
   description?: string;
@@ -110,22 +111,23 @@ const ProjectCard = ({ project, onMouseEnter, onMouseLeave }: {
   return (
     <div className={`sections flex flex-col items-center justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${project.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
       <div
-        className="box w-[80vw] lg:w-[50vw] cursor-pointer overflow-hidden  "
+        className="box w-[60vw] lg:w-[50vw] cursor-pointer overflow-hidden  "
         data-color={project.color}
         onMouseEnter={() => onMouseEnter(project.color)}
         onMouseLeave={onMouseLeave}
       >
-        <div className="image w-full h-[300px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
-          <img
+        <div className="  relative image w-full h-[300px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
+          <Image
             src={project.imageUrl}
             alt={project.altText}
-            className="w-full h-full rounded-[5%] object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
+            fill
+            className=" rounded-[5%] object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
           />
         </div>
       </div>
       <div className="text w-[80vw] lg:w-[50vw]">
         <div className="textblock flex flex-col">
-          <h1 className="text-lg md:text-xl lg:text-2xl font-semibold py-3">
+          <h1 className="text-lg md:text-xl lg:text-2xl font-semibold py-5">
             {project.title}
           </h1>
           <div className="bg-black w-full h-[1px]" />

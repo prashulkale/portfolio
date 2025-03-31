@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function Button({ isActive, toggleMenu }) {
+export default function Button({ isActive, toggleMenu } :{isActive: boolean , toggleMenu : () => void}) {
   return (
     <div className="absolute top-0 right-0 w-[100px] h-[40px] cursor-pointer rounded-[25px] overflow-hidden">
       <motion.div 
@@ -25,7 +25,7 @@ export default function Button({ isActive, toggleMenu }) {
   );
 }
 
-function PerspectiveText({ label, textColor = "text-black" }) {
+function PerspectiveText({ label = "", textColor = "text-black" }) {
   return (    
     <div className="flex flex-col items-center justify-center h-full w-full transform-style-preserve-3d transition-transform duration-75 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:rotate-x-90">
       <p className={`m-0 uppercase transition-all duration-75 ease-[cubic-bezier(0.76,0,0.24,1)] pointer-events-none ${textColor} group-hover:-translate-y-full group-hover:opacity-0`}>

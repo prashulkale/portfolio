@@ -55,7 +55,7 @@ const SplitHeader = () => {
   const [leftWidth, setLeftWidth] = useState(60); // Default 60% width
   const leftSide = useRef(null);
 
-  const handleMove = (clientX) => {
+  const handleMove = (clientX :number) => {
     const percentage = (clientX / window.innerWidth) * 100;
     // Constrain between 0% and 100%
     const constrainedPercentage = Math.max(0, Math.min(100, percentage));
@@ -63,8 +63,8 @@ const SplitHeader = () => {
   };
 
   useEffect(() => {
-    const handleMouseMove = (e) => handleMove(e.clientX);
-    const handleTouchMove = (e) => handleMove(e.touches[0].clientX);
+    const handleMouseMove = (e :MouseEvent) => handleMove(e.clientX);
+    const handleTouchMove = (e :TouchEvent) => handleMove(e.touches[0].clientX);
 
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("touchmove", handleTouchMove);
