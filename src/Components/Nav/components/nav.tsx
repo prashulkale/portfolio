@@ -67,6 +67,10 @@ export const links = [
     {
         title: "Contact",
         href: "#Footer"
+    },
+    {
+        title: "DownloadCV",
+        href:"/Prashant resume.pdf"
     }
 ]
 
@@ -102,6 +106,8 @@ export default function Nav({isActived}:{isActived: (value: boolean)=>void}) {
   return (
     <div className="flex flex-col justify-between p-[100px_40px_50px_40px] h-full box-border">
       <div className="flex flex-col gap-2.5"> {/* gap-[10px] converted to gap-2.5 */}
+
+        
         {links.map((link, i) => {
           const { title, href } = link;
           return (
@@ -136,6 +142,8 @@ export default function Nav({isActived}:{isActived: (value: boolean)=>void}) {
             </div>
           )
         })}
+
+
       </div>
       
       <motion.div className="flex flex-wrap">

@@ -20,7 +20,7 @@ export default function Paragraph() {
       <SectionHeading>About</SectionHeading>
       <p 
         ref={container} 
-        className="flex  flex-wrap  lg:w-[70vw]  text-[1rem] lg:text-[2rem] leading-[0.5] lg:leading-[0.9]  text-center  md:text-ellipsis md:text-[1.6rem] md:leading-normal"
+        className="flex  flex-wrap  lg:w-[70vw]  text-[1.2rem] lg:text-[2rem] leading-[0.5] lg:leading-[0.9]  text-center  md:text-ellipsis md:text-[1.6rem] md:leading-normal"
       >
         {words.map((word, i) => {
           const start = i / words.length;

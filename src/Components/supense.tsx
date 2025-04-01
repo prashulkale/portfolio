@@ -61,7 +61,7 @@ export default function Index() {
           variants={slideUp} 
           initial="initial" 
           exit="exit" 
-          className="fixed h-screen w-screen flex items-center justify-center pb-[30vh] z-[99] bg-[#141516]"
+          className="fixed h-screen w-screen flex items-center justify-center  z-[99] bg-[#141516]"
         >
           {dimension.width > 0 && 
             <>
@@ -69,7 +69,7 @@ export default function Index() {
                 variants={opacity} 
                 initial="initial" 
                 animate="enter"
-                className="flex text-white text-[152px] items-center absolute z-[1]"
+                className="flex text-white text-[15vw] items-center absolute z-[1]"
               >
                 <span className="block w-[20px] h-[20px] bg-white rounded-full mr-[10px]"></span>
                 {words[index]}

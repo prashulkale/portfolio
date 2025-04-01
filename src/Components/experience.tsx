@@ -38,8 +38,8 @@ interface Experience {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "Exelidraw Clone",
-    imageUrl: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+    title: "Exelidraw Clone", 
+    imageUrl: "/excalidraw.png",
     altText: "Exelidraw project",
     color: "#EC533B",
     layout: 'left',
@@ -58,9 +58,9 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: "Tension (Notion Clone)",
-    imageUrl: "https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
-    altText: "Orange project",
+    title: "Tension  (Notion Clone)",
+    imageUrl: "/Tension.png",
+    altText: "Tension project",
     color: "#900c3e",
     layout: 'right',
     links: [
@@ -94,7 +94,7 @@ const experienceData: Experience[] = [
     id: 2,
     title: "Intern (BlinkIt)",
     imageUrl: "https://www.giverefer.com/thumbnails/1680423288.png",
-    altText: "Strawberry experience",
+    altText: "Blinkit experience",
     color: "#FFC72C",
     description: "ANALYIST + PACKAGING + DARK.STORE",
     layout: 'right',
@@ -109,14 +109,15 @@ const ProjectCard = ({ project, onMouseEnter, onMouseLeave }: {
   onMouseLeave: () => void 
 }) => {
   return (
-    <div className={`sections flex flex-col items-center justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${project.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
+    <div className={`sections flex flex-col items-center  justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${project.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
       <div
-        className="box w-[60vw] lg:w-[50vw] cursor-pointer overflow-hidden  "
+        className="box w-[80vw] md:w-[60vw] lg:w-[50vw] h-[30vmax] rounded-[5%] flex items-center justify-center bg-gray-200 cursor-pointer overflow-hidden  "
         data-color={project.color}
         onMouseEnter={() => onMouseEnter(project.color)}
         onMouseLeave={onMouseLeave}
+        
       >
-        <div className="  relative image w-full h-[300px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
+        <div className="  relative image w-[80%] h-[70%]  rounded-[5%] border  border-black overflow-hidden">
           <Image
             src={project.imageUrl}
             alt={project.altText}
