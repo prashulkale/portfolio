@@ -109,20 +109,20 @@ const ProjectCard = ({ project, onMouseEnter, onMouseLeave }: {
   onMouseLeave: () => void 
 }) => {
   return (
-    <div className={`sections flex flex-col items-center  justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${project.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
+    <div className={`drop-shadow-sm sections flex flex-col items-center  justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${project.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
       <div
-        className="box w-[80vw] md:w-[60vw] lg:w-[50vw] h-[30vmax] rounded-[5%] flex items-center justify-center bg-gray-200 cursor-pointer overflow-hidden  "
+        className="box w-[80vw] md:w-[60vw] lg:w-[50vw] h-[30vmax] rounded-4xl flex items-center justify-center bg-gray-200 cursor-pointer overflow-hidden  "
         data-color={project.color}
         onMouseEnter={() => onMouseEnter(project.color)}
         onMouseLeave={onMouseLeave}
         
       >
-        <div className="  relative image w-[80%] h-[70%]  rounded-[5%] border  border-black overflow-hidden">
+        <div className="  relative image w-[80%] h-[75%]  border  border-black overflow-hidden">
           <Image
             src={project.imageUrl}
             alt={project.altText}
             fill
-            className=" rounded-[5%] object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
+            className="  object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
           />
         </div>
       </div>

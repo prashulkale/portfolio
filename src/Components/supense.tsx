@@ -57,7 +57,7 @@ export default function Index() {
 
     return (
         <motion.div 
-          style={{ fontFamily: "Voyage Regular" }}
+          // style={{ fontFamily: "Voyage Regular" }}
           variants={slideUp} 
           initial="initial" 
           exit="exit" 

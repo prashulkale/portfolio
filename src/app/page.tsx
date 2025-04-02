@@ -28,7 +28,7 @@ export default function Home() {
         <Dynamic />
       ) : (
         <div
-        style={{ fontFamily: "Voyage Regular" }}
+        // style={{ fontFamily: "Voyage Regular" }}
         // style={{ fontFamily: 'var(--font-voyage-regular) !important' }}
         className={` w-screen h-screen absolute top-0 z-[99999] bg-black flex flex-col  justify-center items-center text-[25vw] lg:text-[14vw] text-[#c9c9c9] leading-[20vw]`}
       >

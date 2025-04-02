@@ -81,7 +81,7 @@ const SplitHeader = () => {
       <div
         ref={leftSide}
         id="Skills"
-        className="grid will-change-transform transition-transform  py-10 h-full place-items-start absolute  overflow-hidden z-2 bg-gray-900"
+        className="grid will-change-transform transform-content  py-10 h-full place-items-start absolute  overflow-hidden z-2 bg-gray-900"
         style={{ width: `${leftWidth}%` }}
       >
         <h2 className="text-white text-4xl md:text-7xl px-[5vw] font-extrabold w-[80vw]">
