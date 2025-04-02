@@ -4,7 +4,6 @@
 
 import { useEffect, useState } from "react";
 import Dynamic from "@/Components/Dynamic/page";
-import { voyageRegular} from './fonts';
 
 
 export default function Home() {

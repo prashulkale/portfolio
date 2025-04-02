@@ -167,10 +167,11 @@ const ExperienceCard = ({ experience, onMouseEnter, onMouseLeave }: {
         onMouseLeave={onMouseLeave}
       >
         <div className="image w-full max-w-[600px] h-[200px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
-          <img
+          <Image
             src={experience.imageUrl}
             alt={experience.altText}
-            className="w-full h-full rounded-[5%] object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
+            fill
+            className=" rounded-[5%] object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
           />
         </div>
         <div className="text p-5">
