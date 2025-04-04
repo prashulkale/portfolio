@@ -81,8 +81,8 @@ const projectsData: Project[] = [
 const experienceData: Experience[] = [
   {
     id: 1,
-    title: "Intern (alfa level)",
-    imageUrl: "https://images.unsplash.com/photo-1539248519424-b4b8f9a99a4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    title: "Intern (Value Concept)",
+    imageUrl: "/ValueConcept.png",
     altText: "Watermelon experience",
     color: "#003B49",
     description: "BRANDING + AUDIT + WEBSITE",
@@ -96,7 +96,7 @@ const experienceData: Experience[] = [
     imageUrl: "/Blinkit.png",
     altText: "Blinkit experience",
     color: "#FFC72C",
-    description: "ANALYIST + PACKAGING + DARK.STORE",
+    description: "ANALYIST  + DARK.STORE + 2 Months",
     layout: 'right',
     tags: ["Branding", "UI/UX", "Development"]
 

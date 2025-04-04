@@ -68,10 +68,7 @@ export const links = [
         title: "Contact",
         href: "#Footer"
     },
-    {
-        title: "DownloadCV",
-        href:"/Prashant resume.pdf"
-    }
+   
 ]
 
 export const footerLinks = [
@@ -84,7 +81,10 @@ export const footerLinks = [
     {
         title: "Twitter",
         href: "https://x.com/prashul_k_twt"
-    }
+    }, {
+      title: "DownloadCV",
+      href:"/Prashant resume.pdf"
+  }
 ]
 
 
