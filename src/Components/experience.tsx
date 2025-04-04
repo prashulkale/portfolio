@@ -93,7 +93,7 @@ const experienceData: Experience[] = [
   {
     id: 2,
     title: "Intern (BlinkIt)",
-    imageUrl: "https://www.giverefer.com/thumbnails/1680423288.png",
+    imageUrl: "/Blinkit.png",
     altText: "Blinkit experience",
     color: "#FFC72C",
     description: "ANALYIST + PACKAGING + DARK.STORE",
@@ -109,9 +109,9 @@ const ProjectCard = ({ project, onMouseEnter, onMouseLeave }: {
   onMouseLeave: () => void 
 }) => {
   return (
-    <div className={`drop-shadow-sm sections flex flex-col items-center  justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${project.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
+    <div className={`drop-shadow-sm sections py-10 flex flex-col items-center  justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${project.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
       <div
-        className="box w-[80vw] md:w-[60vw] lg:w-[50vw] h-[30vmax] rounded-4xl flex items-center justify-center bg-gray-200 cursor-pointer overflow-hidden  "
+        className="box w-[80vw] md:w-[60vw] lg:w-[50vw] h-[30vmax] rounded flex items-center justify-center bg-gray-200 cursor-pointer overflow-hidden  "
         data-color={project.color}
         onMouseEnter={() => onMouseEnter(project.color)}
         onMouseLeave={onMouseLeave}
@@ -131,8 +131,8 @@ const ProjectCard = ({ project, onMouseEnter, onMouseLeave }: {
           <h1 className="text-lg md:text-xl lg:text-2xl font-semibold py-5">
             {project.title}
           </h1>
-          <div className="bg-black w-full h-[1px]" />
-          <div className="w-[100%] h-[8vmax] flex flex-row-reverse justify-between items-center font-mono font-medium">
+          <div className=" bg-gray-600 w-full h-[1px]" />
+          <div className="w-[100%] h-[6vmax] flex flex-row-reverse justify-between items-center font-mono font-medium">
             {project.links.map((link, index) => (
               <a
                 key={index}
@@ -158,21 +158,25 @@ const ExperienceCard = ({ experience, onMouseEnter, onMouseLeave }: {
 }) => {
   return (
 
-<div className={`sections flex flex-col items-center justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${experience.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
+<div className={`sections flex flex-col items-center   justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${experience.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
  
       <div
-        className="box w-[40vmax] cursor-pointer border  rounded-[5%] overflow-hidden"
+        className="box w-[40vmax] cursor-pointer border border-black  rounded-[5%] overflow-hidden"
         data-color={experience.color}
         onMouseEnter={() => onMouseEnter(experience.color )  }
         onMouseLeave={onMouseLeave}
       >
-        <div className="image w-full max-w-[600px] h-[200px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
+        <div className="  relative image w-full max-w-[600px] h-[200px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
           <Image
             src={experience.imageUrl}
             alt={experience.altText}
             fill
             className=" rounded-[5%] object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
           />
+
+
+
+          
         </div>
         <div className="text p-5">
           <div className="textblock flex flex-col">
@@ -196,7 +200,7 @@ const SectionComponent = () => {
   return (
     <div
       id="Projects"
-      className="w-[100%] p-5 md:px-10 transition-colors duration-400 ease-in-out will-change-[background-color]"
+      className="w-[100%] p-5 py-20 md:px-10 transition-colors duration-400 ease-in-out will-change-[background-color]"
       style={{ backgroundColor, color  }}
     >
       <SectionHeading>Projects</SectionHeading>
@@ -214,7 +218,7 @@ const SectionComponent = () => {
 
   <div
   id="Experience"
-  className="scroll-mt-20 border mt-10 rounded-t-4xl  border-black"
+  className="scroll-mt-20 border   mt-12  rounded-2xl  border-black"
   >
 
       <SectionHeading>Experience</SectionHeading>

@@ -24,7 +24,8 @@ export default function Footer() {
   return (
     <footer className="w-full h-[100vh] flex  flex-col  justify-between bg-white text-black text-center py-8 border-t">
         <div className="heroName  mt-40 lg:mt-0">
-            <h1    className="  m-auto text-[3rem] lg:text-[9rem]  w-fit border-1 border-black  px-8  rounded-lg" >PRASHANT KALE</h1>
+      
+        <h1    style={{ fontFamily: "Voyage Regular" }}   className="  m-auto text-[3rem] lg:text-[9rem]  w-fit border-1 border-black  px-8  rounded-lg" >PRASHANT KALE</h1>
         </div>
 
 
