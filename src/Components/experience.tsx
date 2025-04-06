@@ -131,8 +131,8 @@ const ProjectCard = ({ project, onMouseEnter, onMouseLeave }: {
           <h1 className="text-lg md:text-xl lg:text-2xl font-semibold py-5">
             {project.title}
           </h1>
-          <div className=" bg-gray-600 w-full h-[1px]" />
-          <div className="w-[100%] h-[6vmax] flex flex-row-reverse justify-between items-center font-mono font-medium">
+          <div className=" bg-gray-600 w-full h-[1px] mb-3" />
+          <div className="w-[100%]  flex flex-row-reverse justify-between items-center font-mono font-medium">
             {project.links.map((link, index) => (
               <a
                 key={index}
@@ -161,12 +161,12 @@ const ExperienceCard = ({ experience, onMouseEnter, onMouseLeave }: {
 <div className={`sections flex flex-col items-center   justify-center px-10 mt-12 md:mt-14 lg:mt-16 ${experience.layout === 'right' ? 'lg:items-end' : 'lg:items-start'}`}>
  
       <div
-        className="box w-[40vmax] cursor-pointer border border-black  rounded-[5%] overflow-hidden"
+        className="box w-[40vmax] cursor-pointer border border-black  flex flex-col justify-center items-center rounded-[5%] overflow-hidden"
         data-color={experience.color}
         onMouseEnter={() => onMouseEnter(experience.color )  }
         onMouseLeave={onMouseLeave}
       >
-        <div className="  relative image w-full max-w-[600px] h-[200px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
+        <div className="  relative image w-full  max-w-[600px] h-[200px] md:h-[250px] lg:h-[350px] rounded-[5%] overflow-hidden">
           <Image
             src={experience.imageUrl}
             alt={experience.altText}
