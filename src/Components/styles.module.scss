@@ -1,0 +1,151 @@
+
+
+
+.paragraph{
+    display: flex;
+    font-size: 1.6rem;
+    
+    line-height: 0.8;
+    
+    max-width: 1080px;
+    // color: white;
+    flex-wrap: wrap;
+    // margin-bottom: 30vh;
+
+    @media (min-width: 640px) {
+    line-height: 1;
+      
+      font-size: 2.6rem; // Font size for larger screens
+    }
+    .word{
+      position: sticky;
+      margin-right: 12px;
+      margin-top: 12px;
+      .shadow{
+        position: absolute;
+        opacity: 20%;
+        // font-size: 14px; // Default font size for mobile
+    
+       
+      }
+    }
+
+  }
+
+
+.homeDiv{
+  position :  sticky ;
+  top : "50%";
+ margin-top : "30%";
+  
+  width: 300px;
+  height:  300px;
+  background-color:  blue;
+  border-radius: 5rem;
+}
+
+
+
+
+
+
+
+
+.projects{
+  position:   sticky;
+  // margin-bottom: 50vh;
+  height: 70vh;
+
+  top:25%;
+  .project{
+    position: relative;
+  }
+}
+
+
+
+
+
+.loading{
+  width: 100vw;
+  height: 100vh;
+  // padding-bottom: 30vh;
+  position: absolute;
+  background: #000;
+  top: 0;
+  z-index: 99999;
+  line-height: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // transform: translateY(-50%);
+  font-size: 20vw;
+  color: rgb(201, 201, 201);
+
+
+}
+
+
+
+
+
+.landing{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  .heroImg{
+    // width: 140vw;
+    // padding: 10vw;
+    // height: 150vh;
+    // height: 100vh;
+    // background: #000;
+    object-fit: contain;
+  }
+  
+  .sliderContainer{
+    position: absolute;
+    top: 10vmax;
+
+  }
+  
+  .slider{
+    position: relative;
+    white-space: nowrap;
+    
+  }
+  
+  .slider p{
+    position: relative;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 230px;
+    font-weight: 500;
+    padding-right: 50px;
+  }
+  
+  .slider p:nth-of-type(2){
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+
+  .description{
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    p{
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+    svg{
+      transform: scale(2);
+      margin-bottom: 100px;
+    }
+  }
+}
