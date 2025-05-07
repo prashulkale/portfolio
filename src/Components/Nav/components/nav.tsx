@@ -83,7 +83,7 @@ export const footerLinks = [
         href: "https://x.com/prashul_k_twt"
     }, {
       title: "DownloadCV",
-      href:"/PRASHANT Resume.pdf"
+      href:"/Prashant-Resume.pdf"
   }
 ]
 
